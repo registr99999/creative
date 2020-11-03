@@ -29,5 +29,9 @@
 		"gulp-webp-html": "latest",
 		"imagemin-webp": "latest",
 		"transform-runtime": "0.0.0"
+	},
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp build"
 	}
 }
