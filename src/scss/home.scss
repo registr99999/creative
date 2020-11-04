@@ -39,7 +39,7 @@
 
     &__title {
         font-family: Gotham;
-        @include adaptiv-font(152, 50);
+        @include adaptiv-font(153, 40, 20);
         line-height: 1.2;
         font-weight: 700;
         text-transform: uppercase;
@@ -55,8 +55,8 @@
 
     &__subtitle {
         font-family: Gotham;
-        font-size: 24.8px;
-        line-height: 51px;
+        @include adaptiv-font(30, 8, 20);
+        line-height: calc(51px - 30px);
         text-transform: uppercase;
         letter-spacing: 0.74em;
         color: #11749e;
