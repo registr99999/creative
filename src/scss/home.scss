@@ -137,6 +137,27 @@
 
     &__team {
     }
+    // .page__commit
+
+    &__commit {
+        padding: 0px 0px 100px 0px;
+        @media (max-width: 479.9px) {
+            padding: 0px 0px 50px 0px;
+        }
+    }
+
+    // .page__maps
+
+    &__maps {
+        height: 350px;
+        width: 100%;
+        iframe {
+            height: 100%;
+        }
+        @media  (max-width:479.9px){
+            height: 250px;
+        }
+    }
 }
 .informations-block {
     padding: 172px 0px 70px 0px;
@@ -210,9 +231,17 @@
                 transform: translate(0, -15%);
             }
         }
+        // .title__text_t
         &_t {
             &::after {
                 content: "T";
+            }
+        }
+        // .title__text_c
+
+        &_c {
+            &::after {
+                content: "C";
             }
         }
         // .title__text_white
@@ -661,11 +690,10 @@
 
     &__title {
         padding: 140px 0px;
-        @media (min-width:480px) and (max-width:767.9px){
-
+        @media (min-width: 480px) and (max-width: 767.9px) {
         }
-        @media  (max-width:479.9px){
-            padding: 80px  0px 10px 0px;
+        @media (max-width: 479.9px) {
+            padding: 80px 0px 10px 0px;
         }
     }
 
@@ -741,6 +769,124 @@
         font-size: 15px;
         line-height: 24px;
         color: #000000;
+    }
+}
+//=========================================================================================================================================================================================
+.commit {
+    // .commit__img
+
+    &__img {
+    }
+
+    // .commit__bogy
+
+    &__bogy {
+    }
+
+    // .commit__content
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    // .commit__title
+
+    &__title {
+        padding: 220px 0px 150px 0px;
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding: 100px 0px 90px 0px;
+        }
+        @media (min-width: 480px) and (max-width: 767.9px) {
+            padding: 60px 0px 0px 40px;
+        }
+        @media (max-width: 479.9px) {
+            padding: 60px 0px 10px 0px;
+        }
+    }
+
+    // .commit__form
+
+    &__form {
+    }
+}
+
+.form-commit {
+    // .form-commit__info
+    text-align: center;
+    &__info {
+        margin: 0px -15px 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // .form-commit__item
+
+    &__item {
+        flex: 0 0 33.333%;
+        padding: 0px 15px;
+        margin: 0px 0px 20px 0px;
+        @media (max-width: 767.9px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    // .form-commit__input
+
+    &__input {
+        width: 100%;
+        border: 1px solid #ffffff;
+        background: none;
+        height: 48px;
+        margin: 0px 20px 0px 0px;
+        padding: 0px 0px 0px 15px;
+        &:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+        &::placeholder {
+            font-family: Gotham;
+            font-size: 15px;
+            line-height: 36px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+        }
+    }
+
+    // .form-commit__message
+
+    &__message {
+        margin: 0px 0px 46px 0px;
+    }
+
+    // .form-commit__text-area
+
+    &__text-area {
+        border: 1px solid #ffffff;
+        background: none;
+        padding: 22px 0px 0px 22px;
+        width: 100%;
+        resize: none;
+        &::placeholder {
+            font-family: Gotham;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #ffffff;
+        }
+    }
+
+    // .form-commit__button
+
+    &__button {
+        background-color: #11749e;
+        font-family: Gotham;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 20px 60px;
     }
 }
 //=========================================================================================================================================================================================
