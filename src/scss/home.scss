@@ -133,6 +133,10 @@
 
     &__dog {
     }
+    // .page__team
+
+    &__team {
+    }
 }
 .informations-block {
     padding: 172px 0px 70px 0px;
@@ -204,6 +208,11 @@
             font-weight: 700;
             @media (max-width: 442px) {
                 transform: translate(0, -15%);
+            }
+        }
+        &_t {
+            &::after {
+                content: "T";
             }
         }
         // .title__text_white
@@ -484,10 +493,10 @@
     &__item {
         padding: 0px 30px;
         flex: 0 0 50%;
-        
+
         display: flex;
         align-items: center;
-        @media  (max-width:767.9px){
+        @media (max-width: 767.9px) {
             flex: 0 0 100%;
             margin: 30px 0px;
         }
@@ -520,7 +529,6 @@
         font-weight: 400;
         color: #ffffff;
         padding: 0px 0px 0px 34px;
-        
     }
 }
 
@@ -538,14 +546,13 @@
         z-index: 1;
         padding: 230px 10px 230px 0px;
         max-width: 470px;
-        @media (min-width:768px) and (max-width:992px){
+        @media (min-width: 768px) and (max-width: 992px) {
             padding: 110px 0px 110px 0px;
-            
         }
-        @media (min-width:480px) and (max-width:767.9px){
+        @media (min-width: 480px) and (max-width: 767.9px) {
             padding: 70px 0px 70px 0px;
         }
-        @media  (max-width:767.9px){
+        @media (max-width: 767.9px) {
             padding: 40px 0px;
         }
     }
@@ -586,16 +593,15 @@
         left: 60%;
         height: 500px;
         width: 300px;
-        @media (min-width:768px) and (max-width:992px){
+        @media (min-width: 768px) and (max-width: 992px) {
             opacity: 0.4;
-            
         }
-        @media (min-width:480px) and (max-width:767.9px){
+        @media (min-width: 480px) and (max-width: 767.9px) {
             opacity: 0.4;
             width: 200px;
             height: 350px;
         }
-        @media  (max-width:479.9px){
+        @media (max-width: 479.9px) {
             display: none;
         }
     }
@@ -637,3 +643,104 @@
         }
     }
 }
+//=========================================================================================================================================================================================
+
+.team {
+    // .team__body
+    padding: 0px 0px 25px 0px;
+    &__body {
+    }
+
+    // .team__content
+
+    &__content {
+        text-align: center;
+    }
+
+    // .team__title
+
+    &__title {
+        padding: 140px 0px;
+        @media (min-width:480px) and (max-width:767.9px){
+
+        }
+        @media  (max-width:479.9px){
+            padding: 80px  0px 10px 0px;
+        }
+    }
+
+    // .team__subtitle
+
+    &__subtitle {
+        font-family: Gotham;
+        font-size: 30.1px;
+        line-height: 37px;
+        font-weight: 400;
+        color: #222222;
+        padding: 0px 0px 62px 0px;
+    }
+
+    // .team__card
+
+    &__card {
+        display: flex;
+        margin: 0px -15px;
+        flex-wrap: wrap;
+    }
+
+    // .team__item
+
+    &__item {
+        padding: 0px 15px;
+        position: relative;
+        flex: 0 0 25%;
+        margin: 0px 0px 50px 0px;
+        @media (min-width: 480px) and (max-width: 767.9px) {
+            flex: 0 0 50%;
+        }
+        @media (min-width: 320px) and (max-width: 479.9px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    // .team__img
+
+    &__img {
+        padding: 0px 0px 155% 0px;
+    }
+
+    // .team__block-content
+
+    &__block-content {
+        position: absolute;
+        transform: translate(-50%, 50%);
+        bottom: 0;
+        left: 50%;
+        background: #fff;
+        padding: 23px 10px;
+        width: 70%;
+        display: inline-block;
+    }
+
+    // .team__name-card
+
+    &__name-card {
+        font-family: Gotham;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #11749e;
+        padding: 0px 0px 5px 0px;
+    }
+
+    // .team__position-card
+
+    &__position-card {
+        font-family: Gotham;
+        font-size: 15px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+//=========================================================================================================================================================================================
